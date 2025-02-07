@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modalBody {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.agree:hover,
+.agree:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Information</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Show Disclaimer</button>
+
+<h2>Top 5 Richest People in in the U.S</h2>
+<ul>
+    <li>Elon Musk</li>
+    <li>Jeff Bezos</li>
+    <li>Mark Zuckerberg</li>
+    <li>Larry Ellison</li>
+    <li>Warren Buffett</li>
+</ul>
+
+<h2>Top 5 Biggest Insurance Companies in the U.S</h2>
+<ul>
+    <li>United Health Group Inc.</li>
+    <li>Berkshire Hathaway Inc.</li>
+    <li>CVS Health Corporation</li>
+    <li>The Cigna Group</li>
+    <li>Elevance Health Inc.</li>
+</ul>
+
+<h2>Top 5 Richest Pastors/Televangelists in the U.S.</h2>
+<ul>
+    <li>Kenneth Copeland</li>
+    <li>Joel Olsteen</li>
+    <li>Benny Hinn</li>
+    <li>Steven Furtick Jr.</li>
+    <li>Andy Stanley</li>
+</ul>
+
+<h2>Useful Definitions</h2>
+
+
+<strong>Oligarchy:</strong>
+<p>a form of government in which all power is vested in a few persons or in a dominant class or clique; government by the few. </p>
+<br>
+
+<strong>Theocracy:</strong>
+<p>a form of government in which God or a deity is recognized as the supreme civil ruler, the God's or deity's laws being interpreted by the ecclesiastical authorities.a government or state in which those in power exploit national resources and steal; rule by a thief or thieves. </p>
+<br>
+
+<strong>Revolt:</strong>
+<p>to break away from or rise against constituted authority, as by open rebellion; cast off allegiance or subjection to those in authority; rebel;</p>
+<br>
+
+<!-- The Modal -->
+<div id="modalBody" class="modalBody">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h2>Disclaimer</h2>
+    <p>
+        The information provided on this site (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. 
+    </p>
+    <strong>
+        UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
+    </strong>
+    <br>
+    <br>
+    <br>
+
+    <a href="About:blank"><button class="decline" href=>I do not agree</button></a>
+    <button class="agree">I agree</button>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("modalBody");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var agreeButton = document.getElementsByClassName("agree")[0];
+
+var declineButton = document.getElementsByClassName("decline");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+agreeButton.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
